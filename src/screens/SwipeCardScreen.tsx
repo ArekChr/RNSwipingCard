@@ -46,7 +46,8 @@ export default class SwipeCardScreen extends React.Component<Props> {
         Animated.timing(this.state.animation3, {
           toValue: 1,
           duration: 500
-        })
+        }),
+        Animated.delay(500)
       ]).start(() => {
         this.props.navigation.navigate("CardDetailsScreen");
       });
@@ -179,7 +180,7 @@ export default class SwipeCardScreen extends React.Component<Props> {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "rgb(16,109,255)",
+    backgroundColor: "rgb(16,91,248)",
     alignItems: "center",
     justifyContent: "center"
   },
@@ -189,7 +190,7 @@ const styles = StyleSheet.create({
   },
   card: {
     position: "absolute",
-    left: -50
+    left: -25
   },
   text: {
     position: "absolute",

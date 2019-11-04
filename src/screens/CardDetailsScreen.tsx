@@ -24,7 +24,7 @@ export default class CardDetailsScreen extends PureComponent {
           style={{
             width: 2000,
             height: 2000,
-            backgroundColor: "rgb(16,109,255)",
+            backgroundColor: "rgb(16,91,248)",
             borderRadius: 1500,
             position: "absolute",
             top: -1870,
